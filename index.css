@@ -1,0 +1,68 @@
+body {
+  background: lightblue;
+}
+
+.slider {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+/* BUTTONS */
+.butt {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  z-index: 2;
+}
+
+.butt-right {
+  background: lightcoral;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.butt-left {
+  background: lightcyan;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.butt-pause {
+  background: white;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+
+/* SLIDES */
+.slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: 50%;
+  opacity: 0;
+}
+
+.slide-active {
+  opacity: 1;
+}
+
+.slide-1 {
+  background-image: url('./img/slide_1.jpg');
+}
+
+.slide-2 {
+  background-image: url('./img/slide_2.jpg');
+}
+
+.slide-3 {
+  background-image: url('./img/slide_3.jpg');
+}
+
+.pausing {
+  background: yellow;
+}
